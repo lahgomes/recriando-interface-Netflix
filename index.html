@@ -1,88 +1,43 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/main.css">
-
-    <!--responsividade-->
-    <link rel="stylesheet" href="style/responsive.css">
-
-    <!--owl css-->
-    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
-    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
-    <title>NETFLIX CLONE</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/main.css">
+  <title>NETFLIX CLONE</title>
 </head>
+
 <body>
-    <header>
-        <div class="container">
-            <h2 class="logo">NERDFLIX</h2>
-            <nav>
-                <a href="#">Início</a>
-                <a href="#">Série</a>
-                <a href="#">Filmes</a>
-                <a href="#">Documentários</a>               
-            </nav>
-        </div>
-    </header>
-    <main>
-        <div class="filme-principal">
-            <div class="container">
-                <h3 class="titulo">WandaVision</h3>
-                <p class="descricao">Wanda Maximoff e Visão, um casal de super-heróis com uma vida perfeita, que começam a suspeitar que nem tudo é o que parece. Assista agora a primeira temporada que está imperdível!</p>
-                <div class="botoes">
-                    <button role="button" class="botao">
-                        <i class="fas fa-play"></i>
-                        ASSISTIR AGORA
-                    </button>
-                    <button role="button" class="botao">
-                        <i class="fas fa-info-circle"></i>
-                        MAIS INFORMAÇÕES
-                    </button>
-                </div>    
-            </div>            
-        </div>
-    </main>
+  <main class="login">
+    <section class="conteudo">
+      <div class="access">
+        <h1 class="access__title">Entrar</h1>
+        <form class="access__form">
+          <div class="item">
+            <input type="text" class="access__input" placeholder="Email ou número de telefone">
+          </div>
+          <div class="item">
+            <input type="password" class="access__input" placeholder="Senha">
+          </div>
+          <div class="item">
+            <a class="access__button" href="#">Entrar</a>
+          </div>
+          <div class="item item--ajuda">
+            <label for="lembrar">
+              <input type="checkbox" name="lembrar" id="lembrar">
+              Lembre-se de mim
+            </label>
+            <a href="#">Precisa de ajuda?</a>
+          </div>
+        </form>
 
-    <div class="carrosel-filmes">
-        <div class="owl-carousel owl-theme">
-            <div class="item">
-                <img class="box-filme" src="img/serie1.jpg" alt="">
-            </div>    
-            <div class="item">
-                <img class="box-filme" src="img/serie2.jpg" alt="">
-            </div> 
-            <div class="item">
-                <img class="box-filme" src="img/serie3.jpg" alt="">
-            </div> 
-            <div class="item">
-                <img class="box-filme" src="img/serie4.jpg" alt="">
-            </div> 
-            <div class="item">
-                <img class="box-filme" src="img/serie5.jpg" alt="">
-            </div> 
-            <div class="item">
-                <img class="box-filme" src="img/serie6.jpg" alt="">
-            </div> 
-            <div class="item">
-                <img class="box-filme" src="img/serie7.jpg" alt="">
-            </div> 
-            <div class="item">
-                <img class="box-filme" src="img/serie8.jpg" alt="">
-            </div> 
-            <div class="item">
-                <img class="box-filme" src="img/serie9.jpg" alt="">
-            </div> 
-            <div class="item">
-                <img class="box-filme" src="img/serie10.jpg" alt="">
-            </div>  
-        </div>
-    </div>
 
-    <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
-    <script src="js/owl/jquery.min.js"></script>
-    <script src="js/owl/owl.carousel.min.js"></script>
-    <script src="js/owl/setup.js"></script>
+
+      </div>
+    </section>
+  </main>
 </body>
-</html>     
+
+</html>
