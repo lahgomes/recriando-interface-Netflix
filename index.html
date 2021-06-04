@@ -7,11 +7,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style/main.css">
   <title>NETFLIX CLONE</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
   <main class="login">
-    <section class="conteudo">
+
+    <header class="login__header">
+      <h2 class="logo">NERDFLIX</h2>
+    </header>
+
+    <section class="login__conteudo">
       <div class="access">
         <h1 class="access__title">Entrar</h1>
         <form class="access__form">
@@ -22,7 +28,7 @@
             <input type="password" class="access__input" placeholder="Senha">
           </div>
           <div class="item">
-            <a class="access__button" href="#">Entrar</a>
+            <a class="access__button" href="feed.html">Entrar</a>
           </div>
           <div class="item item--ajuda">
             <label for="lembrar">
@@ -32,9 +38,20 @@
             <a href="#">Precisa de ajuda?</a>
           </div>
         </form>
-
-
-
+      </div>
+      <div class="register">
+        <a href="#" class="register__facebook">
+          <img src="img/fb.png" alt="">
+          Conectar com Facebook
+        </a>
+        <p class="register__signup">
+          Novo por aqui?
+          <a href="#">Assine agora.</a>
+        </p>
+        <p class="register__saibamais">
+          Esta página é protegida pelo Google reCAPTCHA para garantir que você não é um robô.
+          <a href="#">Saiba mais</a>
+        </p>
       </div>
     </section>
   </main>

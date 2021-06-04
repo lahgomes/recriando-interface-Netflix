@@ -2,6 +2,8 @@
   --vermelho: #e50914;
   --preta: #141414;
   --branco: #fff;
+  --cinza: #b3b3b3;
+  --cinza2: #737373;
 }
 
 * {
@@ -39,13 +41,20 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
-.login .conteudo {
+.login__header {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.login__conteudo {
   width: 470px;
   min-height: 600px;
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 50px;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 50px 70px;
 }
 
 .login .access__title {
@@ -61,11 +70,12 @@ body {
 .login .access__input {
   width: 100%;
   height: 50px;
-  padding: 10px 7px;
+  padding: 10px 20px;
   border: none;
   border-radius: 5px;
   background-color: #333;
   color: var(--branco);
+  margin-bottom: 10px;
 }
 
 .login .access__input::placeholder {
@@ -87,7 +97,7 @@ body {
   text-align: center;
   font-size: 20px;
   border-radius: 5px;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .login .item--ajuda {
@@ -95,7 +105,42 @@ body {
   justify-content: space-between;
 }
 
-.login .item--ajuda a {
+.login .item--ajuda a,
+.login .item--ajuda label {
+  color: var(--cinza);
+}
+
+.login .register {
+  margin-top: 50px;
+}
+
+.login .register__facebook {
+  color: var(--cinza2);
+  font-size: 14px;
+  display: flex;
+}
+
+.login .register__facebook img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.login .register__signup {
+  color: var(--cinza2);
+  margin: 11px 0;
+  font-size: 18px;
+}
+
+.login .register__signup a {
+  color: var(--branco);
+}
+
+.login .register__saibamais {
+  font-size: 14px;
+  color: var(--cinza2);
+}
+
+.login .register__saibamais a {
   color: var(--branco);
 }
 
