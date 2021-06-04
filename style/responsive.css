@@ -1,21 +1,54 @@
-@media screen and (max-width:700px) {
-    header .container{
-        display: flex;
-        flex-direction: column;
-    }
-    .botao{
-        margin-top: 5px;
-        width: 190px;
-        height: 50px;
-    }
+@media screen and (max-width: 700px) {
+  .login__header {
+    position: initial;
+    left: initial;
+    top: initial;
+    margin-bottom: 20px;
+  }
 
-    .filme-principal .botao {
-        padding: 15px 20px;
-    }
+  .login {
+    flex-direction: column;
+    padding: 15px;
+    height: auto;
+    justify-content: flex-start;
+  }
+
+  header .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .login__conteudo {
+    width: 100%;
+    padding: 20px;
+    min-height: auto;
+  }
+
+  .login .access__title {
+    font-size: 34px;
+  }
+
+  .login .item--ajuda {
+    font-size: 12px;
+  }
+
+  .register__signup {
+    font-size: 14px;
+  }
+
+  .botao {
+    margin-top: 5px;
+    width: 190px;
+    height: 50px;
+  }
+
+  .filme-principal .botao {
+    padding: 15px 20px;
+  }
 }
 
-@media screen and (min-width:1000px) {
-    .descricao{
-        width: 50%;
-    }
+@media screen and (min-width: 1000px) {
+  .descricao {
+    width: 50%;
+  }
 }
