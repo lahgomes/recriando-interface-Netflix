@@ -144,6 +144,116 @@ body {
   color: var(--branco);
 }
 
+/*Perfil*/
+
+.wrapper-perfil {
+  background: var(--preta);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  flex-direction: column;
+}
+
+.wrapper-perfil h1 {
+  font-size: 40px;
+  margin-bottom: 15px;
+  font-weight: normal;
+}
+
+.wrapper-perfil .perfil-lista {
+  display: flex;
+}
+
+.wrapper-perfil .perfil {
+  margin: 10px 15px;
+  width: 155px;
+}
+
+.wrapper-perfil .perfil-thumb {
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+  height: 155px;
+  margin-bottom: 10px;
+}
+
+.wrapper-perfil .perfil-thumb:not(.perfil-adicionar)::before {
+  content: '';
+  border-radius: 3px;
+  border: 3px solid transparent;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  transition: all .3s ease;
+}
+
+.wrapper-perfil .perfil:hover .perfil-thumb::before {
+  border-color: var(--branco);
+}
+
+.wrapper-perfil .perfil-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.wrapper-perfil .perfil-lista h2 {
+  text-align: center;
+  color: var(--cinza);
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.wrapper-perfil .botao-mais {
+  cursor: pointer;
+  background-color: var(--cinza2);
+  color: var(--preta);
+  border-radius: 50%;
+  width: 85px;
+  height: 85px;
+  font-size: 55px;
+  border: none;
+  transition: all .3s ease;
+}
+
+.perfil .perfil-adicionar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .3s ease;
+}
+
+.perfil .perfil-adicionar:hover {
+  background-color: var(--cinza);
+}
+
+.perfil .perfil-adicionar:hover > .botao-mais {
+  color: var(--cinza);
+}
+
+.wrapper-perfil .botao-gerenciar {
+  cursor: pointer;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-color: var(--preta);
+  color: var(--cinza);
+  font-size: 15px;
+  margin-top: 60px;
+  border: 1px solid;
+  transition: color .3s ease;
+}
+
+.wrapper-perfil .botao-gerenciar:hover {
+  color: var(--branco);
+}
+
 /* feed */
 header .container {
   display: flex;
@@ -227,3 +337,4 @@ header nav a:hover {
 .carrosel-filmes {
   margin-top: 7px;
 }
+

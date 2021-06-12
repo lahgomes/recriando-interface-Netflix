@@ -45,6 +45,33 @@
   .filme-principal .botao {
     padding: 15px 20px;
   }
+
+  .perfil-lista {
+    height: auto;
+  }
+
+  .wrapper-perfil {
+    margin: 20px 0;
+  }
+
+  .wrapper-perfil .perfil-lista {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .wrapper-perfil .perfil {
+    width: 40%;
+    margin: 10px;
+  }
+
+  .wrapper-perfil .perfil-thumb {
+    height: 125px;
+  }
+
+  .wrapper-perfil h1 {
+    font-size: 28px;
+  }
 }
 
 @media screen and (min-width: 1000px) {
